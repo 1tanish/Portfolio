@@ -1,7 +1,7 @@
 @font-face {
     font-family: "General Sans Light";
-    src: url('https://github.com/1tanish/Portfolio/raw/refs/heads/main/gensans/generalsans-italic-webfont.woff')  format('woff'),
-    url('https://github.com/1tanish/Portfolio/raw/refs/heads/main/gensans/generalsans-light-webfont.woff2') format('woff2');
+    src: url('/gensans/generalsans-light-webfont.woff')  format('woff'),
+    url('/gensans/generalsans-light-webfont.woff2') format('woff2');
 }
 @font-face {
     font-family: "General Sans Medium";
