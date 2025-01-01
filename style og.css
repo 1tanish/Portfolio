@@ -1,0 +1,166 @@
+html { scroll-behavior: smooth;}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans";
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+#container {
+    color: white;
+}
+
+#hero {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    /*height: 80px;*/
+    width: 100%;
+    padding: 20px 40px;
+}
+/*
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}*/
+
+#navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact {
+    text-decoration: none;
+    color: white;
+    transition: 75ms ease-in-out;
+}
+.contact:hover {
+    color: #ff5f1f;
+}
+/*//////////////////////////////////*/
+#torso {
+    background-color: #ff5f1f;
+    height: 450px;
+}
+
+.h2hi {
+    color: white;
+    font-family: "General Sans";
+    margin: 20px;
+    font-size: 40px;
+}
+.mechanical {
+    /*background-color: white;*/
+    color: grey;
+    font-family: "General Sans";
+    font-size: 70px;
+    font-weight: 900;
+    margin-left: 20px;
+    display: inline-flex;
+
+}
+
+.engg {
+    z-index: 1;
+    color: grey;
+    font-family: "General Sans";
+    font-size: 10vw;
+    font-weight: 900;
+    margin-left: 300px;
+}
+
+.loc {
+    font-family: "General Sans";
+    margin-left: 50vh;
+    position: relative;
+    top: -13vh;
+    font-weight: bolder;
+    display: inline;
+}
+
+.cool{
+    color: #ff5f1f;
+    font-family: "General Sans";
+    position: relative;
+    top: -13vh;
+    font-weight: bolder;
+    display: inline;
+}
+
+/*availability*/
+#availability{
+    margin-top: 10vh;
+    color: white;
+    font-family: "General Sans";
+    float: right;
+    text-align: right;
+    margin-right: 5vh;
+}
+
+/*footer*/
+.footer{
+    margin-top: 30vh ;
+}
+#skills{
+    float: left;
+    margin-inline: 5vw;
+}
+#skills::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background: #fff;
+    transition: 0.2s ease-in-out;
+    transform: scale(0);
+}
+#skills:hover::after{
+    transform: scale(1);
+}
+
+#projects{
+    margin-left: 46.5vw;
+    width: fit-content;
+}
+#projects::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background: #fff;
+    transition: 0.2s ease-in-out;
+    transform: scale(0);
+}
+#projects:hover::after{
+    transform: scale(1);
+}
+
+
+/*COMMONS*/
+.links{
+    font-family: "General Sans";
+    text-decoration: none;
+    color: white;
+}
+.projex{
+    font-size: 5em;
+    color: grey;
+    margin: 5vh;
+}
+.projex::before{
+    content:"";
+    display: block;
+    height: 1px;
+    background-color: grey;
+    transition: 0.2s ease-in-out;
+}
