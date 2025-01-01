@@ -3,15 +3,13 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-function mousefollower(e) {
-     window.addEventListener("mousemove", function (dets) {
-        console.log(dets.clientX, dets.clientY);
-       document.querySelector("#minicircle").style.transform=`translate(${dets.clientX}px ,${dets.clientY}px)`
-    })
-}
-mousefollower()
-
-
+// function mousefollower(e) {
+//      window.addEventListener("mousemove", function (dets) {
+//         console.log(dets.clientX, dets.clientY);
+//        document.querySelector("#minicircle").style.transform=`translate(${dets.clientX}px ,${dets.clientY}px)`
+//     })
+// }
+// mousefollower()
 
 function firstpageanime() {
     var tl=gsap.timeline();
@@ -31,11 +29,8 @@ function firstpageanime() {
 }
 firstpageanime()
 
-
-
-
-const details = document.getElementsByClassName("details");
-const micro = document.getElementsByClassName("micro");
+// const details = document.getElementsByClassName("details");
+// const micro = document.getElementsByClassName("micro");
 
 
 // const isHover = e => e.parentElement.querySelector(':hover') === e;
