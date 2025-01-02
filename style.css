@@ -47,11 +47,12 @@ html, body {
     overflow: hidden;
     width: fit-content;
     height: fit-content;
+    padding: 5px;
 }
 .r{float: right;}
 
 .boxelem{
-    transform: translateY(150%);
+    transform: translateY(200%);
 }
 .boxelema{
     animation: upa 1.3s ease;
@@ -458,23 +459,22 @@ html, body {
     #availability{
         margin-right: 2vh;
     }
-    #bottom{
-        display: block;
-    }
-    #bottom .right{
-        justify-content: space-between;
-        padding-block: 3vw;
-        border: 4px white;
-    }
-    #bottom .left{
-        justify-content: space-between;
-        border-top: 1px white ;
-    }
     #resume{
         display: flex;
         justify-content: center;
         text-align: center;
         padding-block: 0px;
     }
-
+    #bottom{
+        display: block;
+    }
+    #bottom .right{
+        justify-content: space-between;
+        padding-block: 7vw;
+        border: 4px white;
+    }
+    #bottom .left{
+        justify-content: space-between;
+        border-top: 1px white ;
+    }
 }

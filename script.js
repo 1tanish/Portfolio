@@ -17,7 +17,7 @@ function firstpageanime() {
     tl.from('#navbar', {
         y:'-10',
         opacity:0,
-        duration:.2,
+        duration:1,
         ease:Expo
     })
     .to('.boxelem',{
