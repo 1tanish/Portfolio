@@ -53,3 +53,18 @@ firstpageanime()
 //     });
 //   });
 // });
+
+
+
+const bottom = document.querySelector('.contact'); // Your navigation link
+
+function scrollbottom(){
+    bottom.addEventListener('click', (event) => {
+  event.preventDefault();
+  const targetId = event.target.getAttribute('href'); // Get the target section ID
+  scroller.scrollTo(document.querySelector(targetId), { // Scroll to the target
+    duration: 800, // Optional: Set animation duration
+    easing: 'easeInOutCubic'
+  });
+});}
+scrollbottom();
