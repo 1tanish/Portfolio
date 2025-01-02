@@ -197,9 +197,9 @@ html, body {
 .und:hover::after {
     transform: scale(1);
 }
-.und:hover ~ #minicircle{
-    height: 20px;
-    width: 20px;
+.und{transition: .3s ease;}
+.und:hover{
+    transform: scale(110%);
 }
 .links {
     text-decoration: none;
@@ -352,6 +352,7 @@ html, body {
 #bottom{
     background-color: black;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     padding: 30px 3vw;
 }
@@ -363,7 +364,7 @@ html, body {
 }
 #bottom .right{
     display: flex;
-    gap: 46px
+    gap: 46px;
 }
 #bottom a{
     color: #fff;
@@ -441,14 +442,17 @@ html, body {
     #bottom .right{
         justify-content: space-between;
         padding-block: 3vw;
-        border-bottom: 1px white;
+        border: 4px white;
     }
     #bottom .left{
         justify-content: space-between;
+        border-top: 1px white ;
     }
     #resume{
         display: flex;
         justify-content: center;
+        text-align: center;
+        padding-block: 0px;
     }
 
 }

@@ -56,30 +56,31 @@ firstpageanime()
 
 
 
-const contact = document.querySelector('.contact'); // Your navigation link
+// const contact = document.querySelector('.contact'); // Your navigation link
 
-function scrollbottom(){
-    contact.addEventListener('click', (event) => {
-  event.preventDefault();
-  const targetId = event.target.getAttribute('#bottom'); // Get the target section ID
-  scroller.scrollTo(document.querySelector(targetId), { // Scroll to the target
-    duration: 800, // Optional: Set animation duration
-    easing: 'easeInOutCubic'
-  });
-});}
-scrollbottom();
+// function scrollbottom(){
+//     contact.addEventListener('click', (event) => {
+//   event.preventDefault();
+//   const targetId = event.target.getAttribute('#bottom'); // Get the target section ID
+//   scroller.scrollTo(document.querySelector(targetId), { // Scroll to the target
+//     duration: 800, // Optional: Set animation duration
+//     easing: 'easeInOutCubic'
+//   });
+// });}
+// scrollbottom();
 
 
 const time= document.querySelector('.time');
 const year= document.querySelector('.year');
 
 function updateTime() {
+    const c = '\u00A9';
     const now = new Date();
     const hours = now.getHours().toLocaleString().padStart(2, '0');
     const minutes = now.getMinutes().toLocaleString().padStart(2, '0');
     const years = now.getFullYear().toString().padStart(2, '0' )
     time.textContent = `${hours}:${minutes} IST`;
-    year.textContent = `${years}`;
+    year.textContent = `${years}${c}`;
 }
 
 setInterval(updateTime, 1000);
