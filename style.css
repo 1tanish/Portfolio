@@ -1,17 +1,17 @@
 @font-face {
     font-family: "General Sans Light";
-    src: url('/gensans/generalsans-light-webfont.woff')  format('woff'),
-    url('/gensans/generalsans-light-webfont.woff2') format('woff2');
+    src: url('gensans/generalsans-light-webfont.woff')  format('woff'),
+    url('gensans/generalsans-light-webfont.woff2') format('woff2');
 }
 @font-face {
     font-family: "General Sans Medium";
-    src: url('/gensans/generalsans-medium-webfont.woff') format('woff'),
-    url('/gensans/generalsans-medium-webfont.woff2') format('woff2');
+    src: url('gensans/generalsans-medium-webfont.woff') format('woff'),
+    url('gensans/generalsans-medium-webfont.woff2') format('woff2');
 }
 @font-face {
     font-family: "General Sans semibold";
     src: url('gensans/generalsans-semibold-webfont.woff') format('woff'),
-    url('/gensans/generalsans-semibold-webfont.woff2') format('woff2');
+    url('gensans/generalsans-semibold-webfont.woff2') format('woff2');
 }
 
 html {
