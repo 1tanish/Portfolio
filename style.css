@@ -366,6 +366,9 @@ html, body {
     color: #fff;
     text-transform: uppercase;
 }
+#bottom .righta .hr{
+    display: none;
+}
 
 #skillsec{
     background-color: black;
@@ -423,12 +426,17 @@ html, body {
 @media (max-width: 1200px) {
 
     #aboutsec{
-        padding-right: 10vw;
+        padding-inline: 5vw;
         justify-content: center;
         text-align: center;;
     }
     #aboutsec .aboutp{
         width: 50rem;
+        line-height: 1.5;
+    }
+    #aboutsec .aboutp p{
+        /* text-align: justify; */
+        font-size: 17px;
     }
 }
 
@@ -455,6 +463,7 @@ html, body {
     }
     #block h4{
         justify-content: center;
+        display: block;
     }
     #availability{
         margin-right: 2vh;
@@ -463,18 +472,32 @@ html, body {
         display: flex;
         justify-content: center;
         text-align: center;
-        padding-block: 0px;
+        padding-top: 25vw;
+        padding-inline: 5vw;
+        padding-bottom: 0;
     }
     #bottom{
+        display: block;
+        padding-inline: 5vw;
+        padding-block: 0;
+    }
+    #bottom .righta{
         display: block;
     }
     #bottom .right{
         justify-content: space-between;
-        padding-block: 7vw;
+        padding-block: 5vw;
         border: 4px white;
+        font-size: 4vw;
+    }
+    #bottom .righta .hr {
+        display: block;
+        background-color: #fff;
+        opacity: 0.5;
     }
     #bottom .left{
         justify-content: space-between;
-        border-top: 1px white ;
+        padding-block: 5vw;
+        font-size: 4.3vw;
     }
 }
