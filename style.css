@@ -171,14 +171,15 @@ html, body {
     font-size: 15px;
     width: 58vw;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     padding-inline: 3vw;
 }
 
-.skills {
+/* .skills {
     float: left;
-    /* margin-inline: 3vw; */
-}
+    margin-inline: 3vw;
+} */
 
 .projects {
     float: right;
@@ -205,61 +206,91 @@ html, body {
     color: white;
 }
 
+
+
+
+
+
+
 #projectsec{
     padding-top:150px ;
-    background-color: black;
     border-bottom: .5px solid ;
     margin: 3vw;
     margin-bottom: 0;
     margin-right: 11vw;
 }
+
 .projex{
     position: relative;
     cursor: pointer;
     display: flex;
+    border-top: .5px solid ;
+    padding-block: 4vw;
+    align-items: center;
+}
+.projex .projvis{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: .5px solid ;
+    width: 100%;
+    text-transform: uppercase;
 }
-.projex h1{
-    font-size: 7vw;
+.projex .projvis h1{
+    font-size: 6vw;
     opacity: 0.7;
-    padding-block: 3.3vw;
     transition: .4s ease-out;
 }
-.micro:hover > h1{
+.micro:hover > .projvis h1{
     padding-left: 15vw;
     opacity: 0.1;
 }
-.aiml:hover > h1{
+.aiml:hover > .projvis  h1{
     padding-left: 15vw;
     opacity: 0.1;
 }
 .projex h6{
-    float: right;
     font-size: 15px;
 }
-.projex h5{
+
+
+#projectsec .projex .hovered{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* background-color: #ff5f1f; */
+}
+.projex .hovered h5{
     opacity: 0;
+    /* background-color: #ff5f1f; */
     font-size: 3vw;
     transition: .3s ease-in;
     position: absolute;
     text-transform: uppercase;
 }
-.aiml:hover > h5{
+
+.aiml:hover  .hovered h5{
     opacity: 1;
 }
-.micro:hover > h5{
+.micro:hover .hovered h5{
     opacity: 1;
 }
+
+
 .projex .details{
     width: 40vw;
     font-size: 1.2vw;
     font-family: "General Sans Light";
-    position: absolute;
+    /* position: absolute; */
     transition: .5s ease;
     opacity: 0;
     transform: translateX(20vw);
+}
+.projex .details ul{
+    list-style: none;;
+}
+.projex .details ul li{
+    padding: 1vw;
 }
 .micro:hover .details{
     opacity: 1;
@@ -269,6 +300,21 @@ html, body {
     opacity: 1;
     transform: translateX(35vw);
 }
+.projex .hovered .details ul li span{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    color:coral
+}
+
+
+
+
+
+
+
+
+
+
 #aboutsec{
     margin-top: 15vw;
     width: 100%;
@@ -370,6 +416,11 @@ html, body {
     display: none;
 }
 
+
+
+
+
+
 #skillsec{
     background-color: black;
     padding-left: 3vw;
@@ -378,30 +429,7 @@ html, body {
     font-family: "General sans light" ;
     font-size: 2vw;
 }
-#skillsec h2{
-    font-size: 5vw;
-    opacity: 0.7;
-    transition: .5s ease;
-    float: right;
-}
-#skillsec ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    transition: .5s ease;
-    gap: 1.5vw;
-    /* text-align: center; */
-}
-#skillsec ul li{
-    list-style: none;
-    transition: .5s ease ;
-    font-family: "General sans light";
-    overflow: hidden;
-    text-align: center;
-}
-#skillsec ul li:hover{
-    transform: scale(110%);
-}
+
 .blockskill{
     border-bottom: .5px  solid;
     padding-block: 4.5vw;
@@ -410,7 +438,31 @@ html, body {
     justify-content: space-between;
     align-items: center;
 }
-.blockskill ul li h4{
+#skillsec .blockskill h2{
+    font-size: 5vw;
+    opacity: 0.7;
+    transition: .5s ease;
+}
+#skillsec .blockskill ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    transition: .5s ease;
+    gap: 1.5vw;
+    align-items: center;
+}
+#skillsec .blockskill ul li{
+    list-style: none;
+    transition: .5s ease ;
+    font-family: "General sans light";
+    overflow: hidden;
+    text-align: center;
+}
+#skillsec .blockskill ul li:hover{
+    transform: scale(110%);
+}
+
+#skillsec .blockskill ul li h4{
     transform: translateY(100%);
     text-transform: uppercase;
     opacity: 0;
@@ -421,6 +473,10 @@ html, body {
     transform: translateY(0);
     opacity: .5;
 }
+
+
+
+
 
 
 @media (max-width: 1200px) {
@@ -500,4 +556,142 @@ html, body {
         padding-block: 5vw;
         font-size: 4.3vw;
     }
+
+
+    /************************/
+    #projectsec{
+        border-bottom: .5px solid ;
+        margin: 5vw;
+        margin-bottom: 0;
+        margin-top: 25vw ;
+        padding-top: 0;
+    }
+
+    .projex{
+        position: relative;
+        cursor: pointer;
+        display: block;
+        border-top: .5px solid ;
+        padding-block: 4vw;
+        align-items: center;
+    }
+    .projex .projvis{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%
+    }
+    .projex .projvis h1{
+        /* background-color: #ff5f1f; */
+        width:100%;
+        font-size: 9vw;
+        opacity: 0.7;
+        transition: .4s ease-out;
+    }
+    .micro:hover > .projvis h1{
+        padding-left: 0vw;
+        opacity: .7;
+    }
+    .aiml:hover > .projvis  h1{
+        padding-left: 0vw;
+        opacity: .7;
+    }
+    .projex h6{
+        font-size: 15px;
+        display: none;
+    }
+
+
+    #projectsec .projex .hovered{
+        /* background-color: #ff5f1f; */
+        position: relative;
+        display: block;
+        align-items: start;
+        width: 100%;
+    }
+    .projex .hovered h5{
+        /* text-align: center; */
+        /* background-color: #ff5f1f; */
+        opacity: .7;
+        font-size: 2.5vw;
+        position: relative;
+    }
+
+
+    .projex .details{
+        width: 100%;
+        font-size: 3vw;
+        font-family: "General Sans Light";
+        transition: .5s ease;
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+    .projex .details ul{
+        list-style: none;
+        padding-block: 3vw;
+        padding-inline: 0;
+        text-align: justify;
+    }
+    .projex .details ul li{
+        font-family: "General sans light";
+        padding-block: 2vw;
+        opacity: 0.7;
+    }
+    .micro:hover .details{
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+    .aiml:hover .details{
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+    .projex .hovered .details ul li span{
+        text-transform: uppercase;
+        font-size: 3vw;
+        color:coral;
+    }
+
+    /*****************************************/
+
+    #skillsec{
+        padding-inline: 5vw;
+        text-transform: capitalize;
+        font-family: "General sans light" ;
+        font-size: 3vw;
+    }
+    .blockskill{
+        border-bottom: .5px  solid;
+        padding-block: 4.5vw;
+        display: block;
+        align-items: center;
+    }
+    #skillsec .blockskill h2{
+        font-size: 9vw;
+        text-align: center;
+        opacity: 0.7;
+        transition: .5s ease;
+    }
+    #skillsec .blockskill ul{
+        padding-block: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        transition: .5s ease;
+        gap: 1.5vw;
+        align-items: center;
+    }
+    #skillsec ul li{
+        list-style: none;
+        transition: .5s ease ;
+        font-family: "General sans light";
+        overflow: hidden;
+        text-align: center;
+    }
+    #skillsec .blockskill ul li:hover{
+        transform: scale(100%);
+    }
+    #skillsec .blockskill ul h4{
+        display: none;
+    }
+
 }
