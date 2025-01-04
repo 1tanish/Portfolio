@@ -542,6 +542,7 @@ html, body {
         display: block;
     }
     #bottom .right{
+        gap: 0;
         justify-content: space-between;
         padding-block: 5vw;
         border: 4px white;
