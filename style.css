@@ -525,11 +525,27 @@ html, body {
     #availability{
         margin-right: 2vh;
     }
+    .footer {
+        position: absolute;
+        background-color: #fff;
+        bottom: 5vh;
+        font-size: 15px;
+        width: 58vw;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-inline: 3vw;
+    }
     .und::after {
     display: none;
     }
     .und{
         transition: .3s ease;
+    }
+    .und a{
+        /* border: 1px white solid; */
+        color: black;
+        padding: 5vw;
     }
     .und:hover{
     transform: scale(100%);
@@ -559,7 +575,10 @@ html, body {
         justify-content: space-between;
         padding-block: 5vw;
         border: 4px white;
-        font-size: 4vw;
+        font-size: 15px;
+    }
+    #bottom .right i{
+        font-size: 15px ;
     }
     #bottom .righta .hr {
         display: block;
@@ -569,7 +588,8 @@ html, body {
     #bottom .left{
         justify-content: space-between;
         padding-block: 5vw;
-        font-size: 4.3vw;
+        padding-bottom: 8vw;
+        font-size: 20px;
     }
 
 
