@@ -411,6 +411,7 @@ html, body {
 #bottom a{
     color: #fff;
     text-transform: uppercase;
+    text-decoration: none;
 }
 #bottom .righta .hr{
     display: none;
@@ -434,7 +435,7 @@ html, body {
     border-bottom: .5px  solid;
     padding-block: 4.5vw;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -445,7 +446,7 @@ html, body {
 }
 #skillsec .blockskill ul{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     transition: .5s ease;
     gap: 1.5vw;
