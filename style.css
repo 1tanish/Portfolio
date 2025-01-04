@@ -181,9 +181,9 @@ html, body {
     margin-inline: 3vw;
 } */
 
-.projects {
+/* .projects {
     float: right;
-}
+} */
 
 .und::after {
     content: "";
@@ -525,6 +525,17 @@ html, body {
     #availability{
         margin-right: 2vh;
     }
+    .und::after {
+    display: none;
+    }
+    .und{
+        transition: .3s ease;
+    }
+    .und:hover{
+    transform: scale(100%);
+    }
+
+
     #resume{
         display: flex;
         justify-content: center;
@@ -533,6 +544,8 @@ html, body {
         padding-inline: 5vw;
         padding-bottom: 0;
     }
+
+
     #bottom{
         display: block;
         padding-inline: 5vw;
