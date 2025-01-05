@@ -525,6 +525,9 @@ html, body {
 
 
 @media (max-width: 768px) {
+    #hero{
+        height: 90vh;
+    }
     #navbar{
         height: 50px;
         display: flex;
