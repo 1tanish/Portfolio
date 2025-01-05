@@ -363,6 +363,13 @@ html, body {
     background-color: white;
     color: black;
 }
+
+
+
+
+
+
+
 #resume{
     background-color: black;
     text-transform: uppercase;
@@ -492,18 +499,30 @@ html, body {
 
     #aboutsec{
         padding-inline: 5vw;
-        justify-content: center;
-        text-align: center;;
+        justify-content: left;
+    }
+    #aboutsec img{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin: 0px;
     }
     #aboutsec .aboutp{
         width: 50rem;
         line-height: 1.5;
     }
+    #aboutsec .aboutp h3{
+        margin-bottom: 0;
+        opacity: 0.4;
+        font-size: 15px;
+    }
     #aboutsec .aboutp p{
         /* text-align: justify; */
-        font-size: 17px;
+        font-size: 4vw;
     }
 }
+
+
+
 
 @media (max-width: 768px) {
     #navbar{
@@ -584,6 +603,8 @@ html, body {
     .und:hover{
     transform: scale(100%);
     }
+
+
 
 
     #resume{
