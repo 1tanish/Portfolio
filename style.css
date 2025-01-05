@@ -582,7 +582,7 @@ html, body {
         justify-content: space-between;
         padding-inline: 3vw;
         width: 100%;
-        bottom: 5vh;
+        bottom: 8vh;
     }
     .und::after {
     display: none;
