@@ -526,7 +526,7 @@ html, body {
 
 @media (max-width: 768px) {
     #hero{
-        height: 90vh;
+        height: 85vh;
     }
     #navbar{
         height: 50px;
@@ -657,7 +657,7 @@ html, body {
         border-bottom: 0px solid ;
         margin: 5vw;
         margin-bottom: 0;
-        margin-top: 20vw ;
+        margin-top: 25vw ;
         padding-top: 0;
     }
 
