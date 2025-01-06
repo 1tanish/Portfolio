@@ -457,7 +457,7 @@ html, body {
     display: flex;
     /* background-color: #fff; */
     /* color: black; */
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     transition: .5s ease;
     gap: 4vw;
@@ -769,7 +769,7 @@ html, body {
         padding: 1vw 0vw;
         margin-block: 2vw;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
         transition: .5s ease;
         gap: 1.5vw;
