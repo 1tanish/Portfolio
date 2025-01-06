@@ -243,11 +243,11 @@ html, body {
 }
 .micro:hover > .projvis h1{
     padding-left: 15vw;
-    opacity: 0.1;
+    opacity: 0.07;
 }
 .aiml:hover > .projvis  h1{
     padding-left: 15vw;
-    opacity: 0.1;
+    opacity: 0.07;
 }
 .projex h6{
     font-size: 15px;
@@ -271,10 +271,10 @@ html, body {
 }
 
 .aiml:hover  .hovered h5{
-    opacity: 1;
+    opacity: .6;
 }
 .micro:hover .hovered h5{
-    opacity: 1;
+    opacity: .6;
 }
 
 
@@ -455,8 +455,8 @@ html, body {
 }
 #skillsec .blockskill ul{
     display: flex;
-    background-color: #fff;
-    color: black;
+    /* background-color: #fff; */
+    /* color: black; */
     flex-direction: row;
     justify-content: space-between;
     transition: .5s ease;
@@ -470,9 +470,11 @@ html, body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    opacity: 0.6;
 }
 #skillsec .blockskill ul li:hover{
     transform: scale(110%);
+    opacity: 1;
 }
 
 #skillsec .blockskill ul li h4{
@@ -487,7 +489,7 @@ html, body {
 }
 #skillsec ul li:hover > h4{
     transform: translateY(150%);
-    opacity: 1;
+    opacity: .6;
 }
 
 
@@ -495,7 +497,7 @@ html, body {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
 
     #aboutsec{
         padding-inline: 5vw;
@@ -517,14 +519,14 @@ html, body {
     }
     #aboutsec .aboutp p{
         /* text-align: justify; */
-        font-size: 4vw;
+        font-size: 2vw;
     }
 }
 
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #navbar{
         height: 50px;
         display: flex;
@@ -537,17 +539,17 @@ html, body {
         margin-inline: 3vw;
         border-radius: 5px;
         padding: 0px 2vw;
-        background-color: #fff;
+        /* background-color: #fff; */
     }
     .navbot a {
         text-decoration: none;
         font-size: 17px;
-        color: #000;
+        /* color: #000; */
         font-weight: 900;
         font-family: "General Sans";
     }
     .navbot .contact:hover {
-        color: black;
+        color: white;
     }
     #torso{
         text-align: center;
@@ -764,7 +766,7 @@ html, body {
         transition: .5s ease;
     }
     #skillsec .blockskill ul{
-        padding: 1vw 4vw;
+        padding: 1vw 0vw;
         margin-block: 2vw;
         display: flex;
         flex-direction: row;
@@ -787,4 +789,27 @@ html, body {
         display: none;
     }
 
+    /************/
+    #aboutsec{
+        padding-inline: 5vw;
+        justify-content: left;
+    }
+    #aboutsec img{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin: 0px;
+    }
+    #aboutsec .aboutp{
+        width: 50rem;
+        line-height: 1.5;
+    }
+    #aboutsec .aboutp h3{
+        margin-bottom: 0;
+        opacity: 0.4;
+        font-size: 15px;
+    }
+    #aboutsec .aboutp p{
+        /* text-align: justify; */
+        font-size: 3vw;
+    }
 }
