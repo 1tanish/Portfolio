@@ -11,8 +11,10 @@ widthd();
 function firstpageanime() {
     var tl=gsap.timeline();
     tl.from('#navbar', {
-        y:'-10',
-        opacity:0,
+        // y:'-10',
+        transform:'scale(50)',
+        opacity:1,
+        delay:.5,
         duration:1,
         ease:Expo
     })
