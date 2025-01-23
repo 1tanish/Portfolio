@@ -350,11 +350,7 @@ html, body {
     font-size: 2vw;
     padding: 40px 3vw;
 }
-.blk ul li svg{
-    margin-right: 3vw;
-    height: 5vw;
-    width: 5vw;
-}
+
 .blk ul li> i{
     padding: 4px 3vw;
     font-size: 5px;
@@ -497,17 +493,16 @@ position: absolute;
 
 #aboutsec .aboutp{
     line-height: 1.6;
-    width: 30rem;
+    width: 34rem;
 }
  #aboutsec h3{
-    font-size: 15px;
+    font-size: 14px;
     text-transform: uppercase;
     opacity: 0.8;
     margin-bottom:10px
 }
 #aboutsec p{
-    font-size: 18px;
-    font-weight: 900;
+    font-size: 20px;
     font-family: "General Sans light";
     margin-bottom: 20px;
 }
@@ -519,7 +514,8 @@ position: absolute;
 }
 #aboutsec .aboutp a{
     text-decoration: none;
-    font-family: "General Sans light";
+    font-family: "Poppins";
+    font-weight: 400;
     color: #fff;
     border: 1px solid;
     border-radius: 20px;
@@ -540,7 +536,7 @@ position: absolute;
 #resume{
     /* background-color: rgb(176, 55, 55); */
     text-transform: uppercase;
-    padding-top: 10vh;
+    padding-top: 4vh;
     padding-inline: 3vw;
     padding-bottom: 100px;
     line-height: 1.5;
@@ -700,7 +696,6 @@ position: absolute;
     .und a{
         /* border: 1px white solid; */
         color: black;
-        padding: 5vw;
     }
     .und:hover{
     transform: scale(100%);
@@ -852,31 +847,28 @@ position: absolute;
 
     #sklsec{
         background-color: black;
-        width: 100%;
+        width: 100vw;
         overflow: hidden;
         margin-top: 3vw;
     }
     .blk > h2{
         padding-inline: 3vw;
-        margin-block: 0;
+        /* margin-block: 3vw 0vw; */
         text-transform: uppercase;
         font-family: "Poppins";
         font-weight: 900;
         font-size: 1em;
         background-color: #fff;
         color: #000;
-
     }
     .blk ul{
         list-style: none;
-        /* border-bottom: .05px rgba(255, 255, 255, 0.278) solid ; */
+        border-bottom: .05px rgba(255, 255, 255, 0.278) solid ;
     }
     .blk ul li{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-weight: 400;
-        font-size: 2em;
         border-bottom: .05px rgba(255, 255, 255, 0.278) solid ;
         text-transform: capitalize;
         font-family: "Poppins";
@@ -887,32 +879,17 @@ position: absolute;
     }
     .blk ul li h2{
         font-weight: 400;
-        font-size: 1em;
+        font-size: 2em;
         padding: 40px 3vw;
     }
+
     .hoversec{
        display: none;
     }
-    .blk ul li:hover .hoversec{
-        display: none;
-    }
-    .skillhover{
-        position: relative;
-        height: inherit;
-        display: flex;
-        align-items: center;
-        animation: slide 7s infinite linear;
-    }
-    .skillhover span{
-        white-space: nowrap;
-        padding-inline: 3vw;
-        font-family: "Poppins";
-        font-weight: 100;
-        font-size: 2em;
-    }
 
-    .blk ul li i{
-        font-size: 2em;
+    .blk ul li > i{
+        font-size: 1.5em;
+        padding: 40px  5vw;
     }
 
 
@@ -923,7 +900,6 @@ position: absolute;
         flex-direction: column-reverse;
     }
     .secondskill .plheading{
-        /* margin-top: 3vw; */
         background-color: #fff;
         color: #000;
         text-transform: uppercase;
@@ -931,7 +907,6 @@ position: absolute;
         font-size: 1em;
         font-family: "Poppins";
         font-weight: 900;
-        /* text-align: center; */
     }
 
 
@@ -964,16 +939,22 @@ position: absolute;
     #sklsec .lg ul{
         display: flex;
         list-style: none;
-        animation: slide 10s infinite linear;
-        border-block: 1px rgba(255, 255, 255, 0.278) solid;
+        animation: listslide 10s infinite linear;
+        /* border-block: 1px rgba(255, 255, 255, 0.278) solid; */
     }
 
     #sklsec .lg ul li{
         padding: 20px 90px;
-        padding-bottom: 0;
         font-family: "Poppins";
-        font-weight: 100;
-        font-size: 5em;
+        font-weight: 200;
+        font-size: 3em;
+        display: flex;
+        flex-direction:row-reverse ;
+        align-items: center;
+    }
+    #sklsec .lg ul li i{
+        margin-inline-end: 10px ;
+        font-size: .7em;
     }
     @keyframes slide {
         from {
@@ -982,7 +963,14 @@ position: absolute;
           to {
             transform: translateX(-100%);
           }
-
+    }
+    @keyframes listslide {
+        from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0);
+          }
     }
 
     /************/
@@ -1008,6 +996,21 @@ position: absolute;
     }
     #aboutsec .aboutp p{
         /* text-align: justify; */
-        font-size: 3vw;
+        font-family: "Poppins";
+        font-weight: 300;
+        font-size: 3.5vw;
+    }
+    #aboutsec .aboutp a{
+        text-decoration: none;
+        font-family: "Poppins";
+        color: #fff;
+        border: 1px solid;
+        border-radius: 20px;
+        padding:5px 20px;
+        transition: .3s ease;
+    }
+    #aboutsec .aboutp a:hover{
+        background-color: white;
+        color: black;
     }
 }
