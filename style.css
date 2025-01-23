@@ -90,8 +90,8 @@ html, body {
     text-decoration: none;
     font-size: 17px;
     color: #fff;
+    font-family: "General Sans Medium";
     font-weight: 900;
-    font-family: "General Sans";
 }
 
 .navbot .contact {
