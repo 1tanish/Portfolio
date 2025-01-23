@@ -335,8 +335,8 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 400;
-    font-size: 2em;
+    /* font-weight: 400; */
+    /* font-size: 2em; */
     border-bottom: .05px rgba(255, 255, 255, 0.278) solid ;
     text-transform: capitalize;
     font-family: "Poppins";
@@ -347,7 +347,7 @@ html, body {
 }
 .blk ul li h2{
     font-weight: 400;
-    font-size: 1em;
+    font-size: 2vw;
     padding: 40px 3vw;
 }
 .blk ul li svg{
@@ -357,6 +357,7 @@ html, body {
 }
 .blk ul li> i{
     padding: 4px 3vw;
+    font-size: 5px;
 }
 
 .hoversec{
@@ -385,14 +386,14 @@ html, body {
     white-space: nowrap;
     padding-inline: 3vw;
     font-family: "Poppins";
-    font-weight: 200;
-    font-size: 2em;
+    font-weight: 400;
+    font-size: 2vw;
     display: flex;
     align-items: center;
 }
 
 .blk ul li > i{
-    font-size: 1.5em;
+    font-size: 2vw;
     padding: 40px  5vw;
 }
 
@@ -452,6 +453,13 @@ position: absolute;
     font-family: "Poppins";
     font-weight: 200;
     font-size: 3em;
+    display: flex;
+    flex-direction:row-reverse ;
+    align-items: center;
+}
+#sklsec .lg ul li i{
+    margin-inline-end: 10px ;
+    font-size: 2vw;
 }
 @keyframes slide {
     from {
