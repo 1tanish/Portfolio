@@ -297,11 +297,8 @@ html, body {
     font-weight: 400;
     padding: 1vw;
 }
-.micro:hover .details{
-    opacity: 1;
-    transform: translateX(35vw);
-}
-.aiml:hover .details{
+.micro:hover .details, 
+.aiml:hover .details {
     opacity: 1;
     transform: translateX(35vw);
 }
