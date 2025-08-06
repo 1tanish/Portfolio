@@ -45,6 +45,9 @@ setInterval(updateTime, 1000);
 
 updateTime();
 
+if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    document.documentElement.classList.add('light');
+}
 
 const toggleButton = document.getElementById('themeToggle');
 toggleButton.addEventListener('click', () => {
