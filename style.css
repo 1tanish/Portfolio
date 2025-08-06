@@ -1,17 +1,27 @@
+:root {
+    --bg: black;
+    --bgl: rgba(255, 255, 255, 0.278);
+    --fg: white;
+    --accent: coral;
+}
+
 @font-face {
     font-family: "General Sans Light";
     src: url('gensans/generalsans-light-webfont.woff')  format('woff'),
     url('gensans/generalsans-light-webfont.woff2') format('woff2');
+    font-display: swap;
 }
 @font-face {
     font-family: "General Sans Medium";
     src: url('gensans/generalsans-medium-webfont.woff') format('woff'),
     url('gensans/generalsans-medium-webfont.woff2') format('woff2');
+    font-display: swap;
 }
 @font-face {
     font-family: "General Sans semibold";
     src: url('gensans/generalsans-semibold-webfont.woff') format('woff'),
     url('gensans/generalsans-semibold-webfont.woff2') format('woff2');
+    font-display: swap;
 }
 
 
@@ -36,7 +46,7 @@ html {
 html, body {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: var(--bg);
 }
 
 .boxes{
@@ -66,16 +76,16 @@ html, body {
 }
 
 #container {
-    background-color: black;
-    color: white;
+    background-color: var(--bg);
+    color: var(--fg);
 }
 
 #hero {
     position: relative;
-    color: #fff;
+    color: var(--fg);
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: var(--bg);
 }
 
 .navbot {
@@ -89,7 +99,7 @@ html, body {
 .navbot a {
     text-decoration: none;
     font-size: 17px;
-    color: #fff;
+    color: var(--fg);
     font-family: "General Sans Medium";
     font-weight: 900;
 }
@@ -100,7 +110,7 @@ html, body {
     transition: 75ms ease-in-out;
 }
 .navbot .contact:hover {
-    color: #ff5f1f;
+    color: var(--accent);
 }
 
 /*//////////////////////////////////*/
@@ -112,7 +122,7 @@ html, body {
 
 
 /* #torso .h2hi {
-   color: white;
+   color: var(--fg);
    margin-inline: 52px;
    font-size: 4vw;
 } */
@@ -172,7 +182,7 @@ html, body {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding-inline: 3vw;
-    background-color: #fff;
+    background-color: var(--fg);
     font-family: "Poppins";
 }
 
@@ -180,7 +190,7 @@ html, body {
     content: "";
     display: block;
     height: 1px;
-    background: #000;
+    background: var(--bg);
     transition: 100ms ease-in-out;
     transform: scale(0);
 }
@@ -194,7 +204,7 @@ html, body {
 }
 .links {
     text-decoration: none;
-    color: #000;
+    color: var(--bg);
 }
 
 
@@ -236,14 +246,12 @@ html, body {
     font-family: "Poppins";
     font-weight: 400;
 }
-.micro:hover > .projvis h1{
+
+.projex:hover > .projvis h1 {
     padding-left: 15vw;
     opacity: 0.07;
 }
-.aiml:hover > .projvis  h1{
-    padding-left: 15vw;
-    opacity: 0.07;
-}
+
 .projex h6{
     font-size: 15px;
 }
@@ -300,7 +308,7 @@ html, body {
 .projex .hovered .details ul li span{
     text-transform: uppercase;
     font-size: 1.2vw;
-    color:coral
+    color:var(--accent)
 }
 
 
@@ -311,7 +319,7 @@ html, body {
 
 
 #sklsec{
-    background-color: black;
+    background-color: var(--bg);
     width: 100vw;
     overflow: hidden;
     margin-top: 3vw;
@@ -323,13 +331,13 @@ html, body {
     font-family: "Poppins";
     font-weight: 900;
     font-size: 1em;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--fg);
+    color: var(--bg);
 
 }
 .blk ul{
     list-style: none;
-    border-bottom: .05px rgba(255, 255, 255, 0.278) solid ;
+    border-bottom: .05px var(--bgl) solid ;
 }
 .blk ul li{
     display: flex;
@@ -337,7 +345,7 @@ html, body {
     align-items: center;
     /* font-weight: 400; */
     /* font-size: 2em; */
-    border-bottom: .05px rgba(255, 255, 255, 0.278) solid ;
+    border-bottom: .05px var(--bgl) solid ;
     text-transform: capitalize;
     font-family: "Poppins";
     overflow: hidden;
@@ -357,8 +365,8 @@ html, body {
 }
 
 .hoversec{
-    background-color: #fff;
-    color: #000;
+    background-color: var(--fg);
+    color: var(--bg);
     position: absolute;
     display: flex;
     align-items: center;
@@ -401,8 +409,8 @@ html, body {
     flex-direction: column-reverse;
 }
 .secondskill .plheading{
-    background-color: #fff;
-    color: #000;
+    background-color: var(--fg);
+    color: var(--bg);
     text-transform: uppercase;
     padding: 0px 3vw;
     font-size: 1em;
@@ -428,12 +436,12 @@ position: absolute;
 }
 .lg:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+    background: linear-gradient(to left, transparent, var(--bg));
 }
 
 .lg:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+    background: linear-gradient(to right, transparent, var(--bg));
 }
 
 
@@ -516,15 +524,15 @@ position: absolute;
     text-decoration: none;
     font-family: "Poppins";
     font-weight: 400;
-    color: #fff;
+    color: var(--fg);
     border: 1px solid;
     border-radius: 20px;
     padding:5px 20px;
     transition: .3s ease;
 }
 #aboutsec .aboutp a:hover{
-    background-color: white;
-    color: black;
+    background-color: var(--fg);
+    color: var(--bg);
 }
 
 
@@ -545,7 +553,7 @@ position: absolute;
     opacity: 0.6;
 }
 #resume a{
-    color:#fff;
+    color:var(--fg);
     font-size:17px ;
 }
 #resume .res_und{
@@ -555,7 +563,7 @@ position: absolute;
     content: "";
     display: block;
     height: 1px;
-    background: #fff;
+    background: var(--fg);
     transition: 100ms ease-in-out;
     transform: scale(0);
 }
@@ -581,7 +589,7 @@ position: absolute;
     gap: 46px;
 }
 #bottom a{
-    color: #fff;
+    color: var(--fg);
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -640,17 +648,17 @@ position: absolute;
         margin-inline: 3vw;
         border-radius: 5px;
         padding: 0px 2vw;
-        background-color: #fff;
+        background-color: var(--fg);
     }
     .navbot a {
         text-decoration: none;
         font-size: 17px;
-        color: #000;
+        color: var(--bg);
         font-weight: 900;
         font-family: "General Sans Medium";
     }
     .navbot .contact:hover {
-        color: white;
+        color: var(--fg);
     }
     #torso{
         text-align: center;
@@ -677,7 +685,7 @@ position: absolute;
         margin-right: 2vh;
     }
     .footer {
-        background-color: #fff;
+        background-color: var(--fg);
         font-size: 15px;
         width: 58vw;
         display: flex;
@@ -694,8 +702,8 @@ position: absolute;
         transition: .3s ease;
     }
     .und a{
-        /* border: 1px white solid; */
-        color: black;
+        /* border: 1px var(--fg) solid; */
+        color: var(--bg);
     }
     .und:hover{
     transform: scale(100%);
@@ -723,24 +731,24 @@ position: absolute;
         display: block;
     }
     #bottom .right{
-        background-color: #fff;
+        background-color: var(--fg);
         gap: 0;
         justify-content: space-between;
         margin-block: 3vw;
         border-radius: 5px;
         padding: 2vw;
-        border: 4px white;
+        border: 4px var(--fg);
         font-size: 15px;
     }
     #bottom .right a{
-        color: #000;
+        color: var(--bg);
     }
     #bottom .right i{
         font-size: 15px ;
     }
     #bottom .righta .hr {
         display: block;
-        background-color: #fff;
+        background-color: var(--fg);
         opacity: 0.5;
     }
     #bottom .left{
@@ -840,13 +848,13 @@ position: absolute;
     .projex .hovered .details ul li span{
         text-transform: uppercase;
         font-size: 3vw;
-        color:coral;
+        color:var(--accent);
     }
 
     /*****************************************/
 
     #sklsec{
-        background-color: black;
+        background-color: var(--bg);
         width: 100vw;
         overflow: hidden;
         margin-top: 3vw;
@@ -858,18 +866,18 @@ position: absolute;
         font-family: "Poppins";
         font-weight: 900;
         font-size: 1em;
-        background-color: #fff;
-        color: #000;
+        background-color: var(--fg);
+        color: var(--bg);
     }
     .blk ul{
         list-style: none;
-        border-bottom: .05px rgba(255, 255, 255, 0.278) solid ;
+        border-bottom: .05px var(--bgl) solid ;
     }
     .blk ul li{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: .05px rgba(255, 255, 255, 0.278) solid ;
+        border-bottom: .05px var(--bgl) solid ;
         text-transform: capitalize;
         font-family: "Poppins";
         overflow: hidden;
@@ -900,8 +908,8 @@ position: absolute;
         flex-direction: column-reverse;
     }
     .secondskill .plheading{
-        background-color: #fff;
-        color: #000;
+        background-color: var(--fg);
+        color: var(--bg);
         text-transform: uppercase;
         padding: 0px 3vw;
         font-size: 1em;
@@ -927,12 +935,12 @@ position: absolute;
     }
     .lg:before {
         left: 0;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+        background: linear-gradient(to left, transparent, var(--bg));
     }
 
     .lg:after {
         right: 0;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+        background: linear-gradient(to right, transparent, var(--bg));
     }
 
 
@@ -1003,14 +1011,14 @@ position: absolute;
     #aboutsec .aboutp a{
         text-decoration: none;
         font-family: "Poppins";
-        color: #fff;
+        color: var(--fg);
         border: 1px solid;
         border-radius: 20px;
         padding:5px 20px;
         transition: .3s ease;
     }
     #aboutsec .aboutp a:hover{
-        background-color: white;
-        color: black;
+        background-color: var(--fg);
+        color: var(--bg);
     }
 }
