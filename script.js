@@ -44,3 +44,9 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 updateTime();
+
+
+const toggleButton = document.getElementById('themeToggle');
+toggleButton.addEventListener('click', () => {
+    document.documentElement.classList.toggle('light');
+});

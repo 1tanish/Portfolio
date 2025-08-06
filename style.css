@@ -4,6 +4,12 @@
     --fg: white;
     --accent: coral;
 }
+:root.light {
+    --bg: white;
+    --bgl: rgba(255, 255, 255, 0.278);
+    --fg: black;
+    --accent: coral;
+}
 
 @font-face {
     font-family: "General Sans Light";
@@ -90,6 +96,7 @@ html, body {
 
 .navbot {
     display: flex;
+    position: relative;
     justify-content: space-between;
     width: 100%;
     padding: 30px 3vw;
@@ -113,6 +120,18 @@ html, body {
     color: var(--accent);
 }
 
+#themeToggle{
+    margin-block:20px;
+    background-color: var(--fg);
+    padding: 5px;
+    color: var(--bg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#themeToggle:active{
+    transform: scale(0.96);
+}
 /*//////////////////////////////////*/
 #torso {
     /* background-color: rgb(176, 55, 55); */
@@ -166,7 +185,7 @@ html, body {
 
 /*availability*/
 #availability {
-    margin-top: 200px;
+    margin-top: 150px;
     text-align: right;
     margin-right: 5vh;
 
