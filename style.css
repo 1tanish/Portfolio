@@ -240,6 +240,8 @@ html, body {
     /* border-bottom: .5px solid ; */
     margin-inline: 3vw;
     padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
     /* margin-right: 11vw; */
 }
 
@@ -247,12 +249,12 @@ html, body {
     position: relative;
     cursor: pointer;
     display: flex;
-    border-top: .5px solid ;
+    border-bottom: .5px solid ;
     padding-block: 4vw;
     align-items: center;
 }
 .projex:nth-child(1){
-    border-top: 0px;
+    border-bottom: 0px;
 }
 .projex .projvis{
     display: flex;
@@ -299,13 +301,19 @@ html, body {
 .aiml:hover  .hovered h5{
     opacity: .6;
 }
+.retroport:hover .hovered h5{
+    opacity: .6;
+}
+.personalDashb:hover .hovered h5{
+    opacity: .6;
+}
 .micro:hover .hovered h5{
     opacity: .6;
 }
 
 
 .projex .details{
-    width: 40vw;
+    width: 50vw;
     font-size: 1.2vw;
     transition: .5s ease;
     opacity: 0;
@@ -320,7 +328,9 @@ html, body {
     padding: 1vw;
 }
 .micro:hover .details, 
-.aiml:hover .details {
+.aiml:hover .details,
+.retroport:hover .details,
+.personalDashb:hover .details {
     opacity: 1;
     transform: translateX(35vw);
 }
